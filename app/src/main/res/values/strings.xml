@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name" translatable="false">WolfRol</string>
+    <string name="title_activity_listado" translatable="false">ListadoActivity</string>
+    <string name="title_activity_formulario" translatable="false">FormularioActivity</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="en_partida">En partida</string>
+    <string name="peso">Peso</string>
+    <string name="nombre">Nombre</string>
+    <string name="gnero">Género</string>
+    <string name="historia">Historia</string>
+    <string name="tituloFormulario">Creación de personaje</string>
+    <string name="sobreMi">Sobre mi</string>
+    <string name="ajustes">Configuracion</string>
+    <string name="ordenar">Ordenar</string>
+    <string name="fecha">Fec. Nac.</string>
+
+    <string name="title_activity_sobre_mi">SobreMiActivity</string>
+    <string name="buscar">Buscar </string>
+    <string name="title_activity_buscar">BuscarActivity</string>
+    <string name="lorem_ipsum">WolfRol es una aplicación para irte de aventura. ¡Corre y crea tú personaje! Mi email de aventurero es: algarrido@iesfranciscodelosrios.es -
+    Contacta conmigo, soy Lidia Garrido</string>
+
+    <!--Copiar-->
+    <string name="titlulo_pickers">Obtener fecha y hora</string>
+
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="mensaje">¿Desea eliminar este personaje?
+        Recuerda que esta acción no se podrá revertir</string>
+    <string name="Borrado">¡Cuidado!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="choose">Elige una opción</string>
+    <string name="add">Añadir</string>
+    <string name="new_option">Nueva opción</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add_new_option">Añadir nueva opción</string>
+    <string name="your_option">Escribe tu opción</string>
+    <string name="fechaP">Fecha creacion del personaje</string>
+    <string name="nombreB">Nombre a buscar</string>
+    <string name="seleccion">Seleciona imagen</string>
+    <string name="historia1">Lentamente las nieves de las Ered Meneltobas iba desapareciendo según avanzaba el año 80, el cortejo funerario de Anarel Elamarth hacía meses que había alcanzado su destino y la matriarca ya descansaba bajo los frondosos bosques de Ithilien.</string>
+    <string name="permiso">Permiso denegado</string>
+    <string name="permisoOk">Permiso aceptado</string>
+    <string name="title_activity_ayuda">Ayuda</string>
+    <!--Fin copiar-->
+</resources>

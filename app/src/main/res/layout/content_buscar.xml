@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".views.BuscarActivity"
+    android:background="@color/colorPrimary"
+    tools:showIn="@layout/activity_buscar">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="241dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="144dp"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="@string/fechaP"
+                android:inputType="date"
+                app:layout_constraintStart_toEndOf="@+id/buttonDatePicketB"
+                app:layout_constraintTop_toBottomOf="@+id/TextViewnombreB"
+                tools:layout_conversion_absoluteHeight="45dp"
+                tools:layout_conversion_absoluteWidth="118dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonAyuda"
+                style="@android:style/Widget.DeviceDefault.ImageButton"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="350dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorHelp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+            <Button
+                android:id="@+id/buttonDatePicketB"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="136dp"
+                android:background="@drawable/ic_date_range"
+                android:shadowColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewNombreBuscar"
+                tools:layout_conversion_absoluteHeight="35dp"
+                tools:layout_conversion_absoluteWidth="33dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/TextViewnombreB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="144dp"
+                android:background="#00FFFFFF"
+                android:hint="@string/nombreB"
+                app:layout_constraintStart_toEndOf="@+id/imageViewNombreBuscar"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="47dp"
+                tools:layout_conversion_absoluteWidth="108dp" />
+
+            <ImageView
+                android:id="@+id/imageViewList"
+                android:layout_width="44dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="144dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonDatePicketB"
+                app:srcCompat="@drawable/ic_list"
+                tools:layout_conversion_absoluteHeight="30dp"
+                tools:layout_conversion_absoluteWidth="31dp" />
+
+            <ImageView
+                android:id="@+id/imageViewNombreBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="144dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_action_user"
+                tools:layout_conversion_absoluteHeight="30dp"
+                tools:layout_conversion_absoluteWidth="31dp" />
+
+            <Spinner
+                android:id="@+id/spinnerbuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="140dp"
+                app:layout_constraintStart_toEndOf="@+id/imageViewList"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+                tools:layout_conversion_absoluteHeight="24dp"
+                tools:layout_conversion_absoluteWidth="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

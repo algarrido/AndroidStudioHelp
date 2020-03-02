@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nombreEditText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434343"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".views.FormularioActivity"
+    tools:showIn="@layout/activity_formulario">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="359dp">
+
+            <ImageView
+                android:id="@+id/imageViewEjemploImagen"
+                android:layout_width="82dp"
+                android:layout_height="142dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewPersonaje"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButtonAdd"
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:foreground="@android:drawable/ic_menu_add"
+                app:backgroundTint="#6B696D"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewPersonaje"
+                android:layout_width="313dp"
+                android:layout_height="157dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.157"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Switch
+                android:id="@+id/switchEnPartida"
+                android:layout_width="111dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/en_partida"
+                android:textColor="#999999"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerRaza"
+                android:layout_width="132dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="60dp"
+
+
+                android:popupBackground="#FFFF"
+                android:textColor="#999999"
+                app:layout_constraintEnd_toStartOf="@+id/floatingActionButtonAdd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextFechaF"
+                android:layout_width="116dp"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:hint="@string/fecha"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ButtonDatePicket"
+                app:layout_constraintTop_toBottomOf="@+id/switchEnPartida" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextPeso"
+                style="@style/Numbers"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/imageViewPeso"
+                app:layout_constraintTop_toBottomOf="@+id/TextNombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/peso" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextGenero"
+                style="@style/campo"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:hint="Genero"
+                app:layout_constraintStart_toEndOf="@+id/imageViewP"
+                app:layout_constraintTop_toBottomOf="@+id/TextPeso">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/genero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextNombre"
+                style="@style/campo"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/nombre"
+                app:layout_constraintStart_toEndOf="@+id/imageViewusuario"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageViewusuario"
+                android:layout_width="31dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_action_user" />
+
+            <ImageView
+                android:id="@+id/imageViewPeso"
+                android:layout_width="31dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewusuario"
+                app:srcCompat="@drawable/ic_accessibility" />
+
+            <ImageView
+                android:id="@+id/imageViewP"
+                android:layout_width="31dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPeso"
+                app:srcCompat="@drawable/ic_wc" />
+
+            <Button
+                android:id="@+id/ButtonDatePicket"
+                android:layout_width="48dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="468dp"
+                android:layout_marginLeft="468dp"
+                android:layout_marginBottom="104dp"
+                android:background="@drawable/ic_date_range"
+
+                android:shadowColor="@color/colorSecundary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/TextGenero" />
+
+            <EditText
+                android:id="@+id/editTextHistoria"
+                android:layout_width="291dp"
+
+                android:layout_height="97dp"
+                android:layout_marginBottom="44dp"
+                android:background="#2AFFFFFF"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/historia"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButtonGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="#FF9800"
+                android:clickable="true"
+                android:src="@android:drawable/ic_menu_save"
+                android:tint="#FFFFFF"
+                app:backgroundTint="#FF9800"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:backgroundTint="#F44336"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.108"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.884"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.149"
+                app:srcCompat="@drawable/ic_action_edit" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
