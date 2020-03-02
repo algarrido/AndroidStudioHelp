@@ -47,13 +47,13 @@ public class AyudaActivity extends AppCompatActivity implements AyudaInterface.V
 
         String activity_ayuda = getIntent().getStringExtra("activity_ayuda");
         if(activity_ayuda.equals("listado")) {
-            webview.loadUrl("https://algarrido.github.io/AndroidStudio/");
+            webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/index.html");
         }
         if(activity_ayuda.equals("formulario")) {
-            webview.loadUrl("https://algarrido.github.io/AndroidStudio/");
+            webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/formulario.html");
         }
         if(activity_ayuda.equals("buscar")) {
-            webview.loadUrl("https://algarrido.github.io/AndroidStudio/");
+            webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/buscar.html");
         }
 
         FloatingActionButton fab = findViewById(R.id.floatingVolver);

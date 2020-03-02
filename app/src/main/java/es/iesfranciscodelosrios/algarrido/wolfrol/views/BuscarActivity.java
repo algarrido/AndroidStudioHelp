@@ -125,15 +125,6 @@ public class BuscarActivity extends AppCompatActivity implements BuscarInterface
                 finish();
             }
         });
-        buttonAyuda = (ImageButton) findViewById(R.id.imageButtonAyuda); // your image button
-
-        // click event on your button
-        buttonAyuda.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                lanzarAyuda();
-            }
-        });
     }
 
     private void obtenerFecha() {

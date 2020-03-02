@@ -413,14 +413,14 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.nav_menu_buscar, menu);
+        getMenuInflater().inflate(R.menu.nav_menu_formulario, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_ayudaB:
+            case R.id.action_ayudaF:
                 Log.i(TAG, "ayuda...");
                 ;
                 presenter.pestaña4();
