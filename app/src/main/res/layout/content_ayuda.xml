@@ -9,21 +9,6 @@
     tools:showIn="@layout/activity_ayuda">
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="700dp"
-        android:layout_marginBottom="50dp"
-        android:clickable="true"
-        android:foreground="@mipmap/ic_launcher_foreground"
-        app:backgroundTint="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <WebView
         android:id="@+id/webviewAyuda"
         android:layout_width="391dp"

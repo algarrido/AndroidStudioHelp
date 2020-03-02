@@ -1,12 +1,16 @@
 package es.iesfranciscodelosrios.algarrido.wolfrol.views;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -46,23 +50,29 @@ public class AyudaActivity extends AppCompatActivity implements AyudaInterface.V
         webview.getSettings().setJavaScriptEnabled(true); // enable javascript
 
         String activity_ayuda = getIntent().getStringExtra("activity_ayuda");
-        if(activity_ayuda.equals("listado")) {
-            webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/index.html");
-        }
-        if(activity_ayuda.equals("formulario")) {
-            webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/formulario.html");
-        }
-        if(activity_ayuda.equals("buscar")) {
-            webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/buscar.html");
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+
+        if (networkInfo != null && networkInfo.isConnected()) {
+            if(activity_ayuda.equals("listado")) {
+                webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/listado.html");
+            }
+            if(activity_ayuda.equals("formulario")) {
+                webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/formulario.html");
+            }
+            if(activity_ayuda.equals("buscar")) {
+                webview.loadUrl("https://algarrido.github.io/AndroidStudioHelp/buscar.html");
+            } // Si hay conexión a Internet en este momento
+        } else {
+            Toast toast1 =
+                    Toast.makeText(getApplicationContext(),
+                            "No hay conexión a internet, por favor vuelva a cargar la página", Toast.LENGTH_SHORT);
+
+            toast1.show();
         }
 
-        FloatingActionButton fab = findViewById(R.id.floatingVolver);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
+
 
     }
 
