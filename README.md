@@ -1,7 +1,6 @@
-"# AndroidStudio" 
-# Project Title
+ # AndroidStudio
 
-One Paragraph of project description goes here
+WolfRol es una App para crear tu personaje, embárcate en una aventura!
 
 ## Getting Started
 
