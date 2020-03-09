@@ -32,4 +32,4 @@ Para conocer las versiones disponibles consulta las etiquetas de los siguientes 
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT - vea el archivo [LICENSE.md] (LICENSE.md) para más detalles
+Este proyecto está licenciado bajo la Licencia MIT - vea el archivo [LICENSE.md](LICENSE.md) para más detalles
