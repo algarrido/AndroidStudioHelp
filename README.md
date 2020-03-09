@@ -2,9 +2,9 @@
 
 WolfRol es una App para crear tu personaje, embárcate en una aventura!
 
-## Empezando..
+## Empezando...
 
-Para empezar descarga nuestra app desde el siguiente enlace [aquí](https://github.com/algarrido/AndroidStudioHelp/releases/tag/1.0)
+Para empezar descarga nuestra app desde el siguiente enlace [aquí](https://github.com/algarrido/AndroidStudioHelp/releases/download/1.0/app-debug6.apk)
 
 ### Requisitos
 
@@ -18,7 +18,7 @@ Para la instalación necesitaremos pasar la apk al movil y ejecutarla, aceptamos
 
 * [Android Studio](https://developer.android.com/reference) - Java
 
-## Versioning
+## Versiones
 
 Para conocer las versiones disponibles consulta las etiquetas de los siguientes repositorios:
 * [Version 1](https://github.com/algarrido/AndroidStudio_Dise-o/releases)
